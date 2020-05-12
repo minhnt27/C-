@@ -1,0 +1,16 @@
+E:\Lab\Demo\Zkteco\ZKtecoControl\ZKtecoControl\bin\Debug\ZKtecoControl.exe.config
+E:\Lab\Demo\Zkteco\ZKtecoControl\ZKtecoControl\bin\Debug\ZKtecoControl.exe
+E:\Lab\Demo\Zkteco\ZKtecoControl\ZKtecoControl\bin\Debug\ZKtecoControl.pdb
+E:\Lab\Demo\Zkteco\ZKtecoControl\ZKtecoControl\bin\Debug\Interop.zkemkeeper.dll
+E:\Lab\Demo\Zkteco\ZKtecoControl\ZKtecoControl\obj\Debug\Interop.zkemkeeper.dll
+E:\Lab\Demo\Zkteco\ZKtecoControl\ZKtecoControl\obj\Debug\ZKtecoControl.csproj.ResolveComReference.cache
+E:\Lab\Demo\Zkteco\ZKtecoControl\ZKtecoControl\obj\Debug\ZKtecoControl.AttLogsMain.resources
+E:\Lab\Demo\Zkteco\ZKtecoControl\ZKtecoControl\obj\Debug\ZKtecoControl.Properties.Resources.resources
+E:\Lab\Demo\Zkteco\ZKtecoControl\ZKtecoControl\obj\Debug\ZKtecoControl.csproj.GenerateResource.cache
+E:\Lab\Demo\Zkteco\ZKtecoControl\ZKtecoControl\obj\Debug\ZKtecoControl.csproj.CoreCompileInputs.cache
+E:\Lab\Demo\Zkteco\ZKtecoControl\ZKtecoControl\obj\Debug\ZKtecoControl.exe
+E:\Lab\Demo\Zkteco\ZKtecoControl\ZKtecoControl\obj\Debug\ZKtecoControl.pdb
+E:\Lab\Demo\Zkteco\ZKtecoControl\ZKtecoControl\bin\Debug\System.Data.SQLite.dll
+E:\Lab\Demo\Zkteco\ZKtecoControl\ZKtecoControl\bin\Debug\System.Data.SQLite.xml
+E:\Lab\Demo\Zkteco\ZKtecoControl\ZKtecoControl\bin\Debug\System.Data.SQLite.dll.config
+E:\Lab\Demo\Zkteco\ZKtecoControl\ZKtecoControl\obj\Debug\ZKtecoControl.csproj.CopyComplete

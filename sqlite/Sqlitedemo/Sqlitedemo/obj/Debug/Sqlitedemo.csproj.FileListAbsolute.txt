@@ -1,0 +1,16 @@
+E:\Lab\Demo\sqlite\Sqlitedemo\Sqlitedemo\bin\Debug\Sqlitedemo.exe.config
+E:\Lab\Demo\sqlite\Sqlitedemo\Sqlitedemo\bin\Debug\Sqlitedemo.exe
+E:\Lab\Demo\sqlite\Sqlitedemo\Sqlitedemo\bin\Debug\Sqlitedemo.pdb
+E:\Lab\Demo\sqlite\Sqlitedemo\Sqlitedemo\bin\Debug\EntityFramework.dll
+E:\Lab\Demo\sqlite\Sqlitedemo\Sqlitedemo\bin\Debug\EntityFramework.SqlServer.dll
+E:\Lab\Demo\sqlite\Sqlitedemo\Sqlitedemo\bin\Debug\System.Data.SQLite.dll
+E:\Lab\Demo\sqlite\Sqlitedemo\Sqlitedemo\bin\Debug\System.Data.SQLite.EF6.dll
+E:\Lab\Demo\sqlite\Sqlitedemo\Sqlitedemo\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Lab\Demo\sqlite\Sqlitedemo\Sqlitedemo\bin\Debug\EntityFramework.xml
+E:\Lab\Demo\sqlite\Sqlitedemo\Sqlitedemo\bin\Debug\EntityFramework.SqlServer.xml
+E:\Lab\Demo\sqlite\Sqlitedemo\Sqlitedemo\bin\Debug\System.Data.SQLite.xml
+E:\Lab\Demo\sqlite\Sqlitedemo\Sqlitedemo\bin\Debug\System.Data.SQLite.dll.config
+E:\Lab\Demo\sqlite\Sqlitedemo\Sqlitedemo\obj\Debug\Sqlitedemo.csproj.CoreCompileInputs.cache
+E:\Lab\Demo\sqlite\Sqlitedemo\Sqlitedemo\obj\Debug\Sqlitedemo.csproj.CopyComplete
+E:\Lab\Demo\sqlite\Sqlitedemo\Sqlitedemo\obj\Debug\Sqlitedemo.exe
+E:\Lab\Demo\sqlite\Sqlitedemo\Sqlitedemo\obj\Debug\Sqlitedemo.pdb
