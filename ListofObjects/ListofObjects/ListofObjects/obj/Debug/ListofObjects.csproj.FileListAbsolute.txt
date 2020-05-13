@@ -1,0 +1,7 @@
+E:\Lab\GitHub\CSharp\ListofObjects\ListofObjects\ListofObjects\bin\Debug\ListofObjects.exe.config
+E:\Lab\GitHub\CSharp\ListofObjects\ListofObjects\ListofObjects\bin\Debug\ListofObjects.exe
+E:\Lab\GitHub\CSharp\ListofObjects\ListofObjects\ListofObjects\bin\Debug\ListofObjects.pdb
+E:\Lab\GitHub\CSharp\ListofObjects\ListofObjects\ListofObjects\obj\Debug\ListofObjects.csproj.CoreCompileInputs.cache
+E:\Lab\GitHub\CSharp\ListofObjects\ListofObjects\ListofObjects\obj\Debug\ListofObjects.exe
+E:\Lab\GitHub\CSharp\ListofObjects\ListofObjects\ListofObjects\obj\Debug\ListofObjects.pdb
+E:\Lab\GitHub\CSharp\ListofObjects\ListofObjects\ListofObjects\obj\Debug\ListofObjects.csprojAssemblyReference.cache
