@@ -20,7 +20,7 @@ namespace ZKtecoControl
 
         //Create Standalone SDK class dynamicly.
         public zkemkeeper.CZKEMClass axCZKEM1 = new zkemkeeper.CZKEMClass();
-        public string cs = @"URI=file:E:\Lab\Demo\sqlite\db\sqlite\testDB.db";
+        //public string cs = @"URI=file:E:\Lab\Demo\sqlite\db\sqlite\testDB.db";
 
         /********************************************************************************************************************************************
         * Before you refer to this demo,we strongly suggest you read the development manual deeply first.                                           *
@@ -66,7 +66,7 @@ namespace ZKtecoControl
                                                          //MessageBox.Show("Machine serial: " + iMachineNumber.ToString(), "Info");
 
                 //new db
-             
+             /*
                 SQLiteConnection con = new SQLiteConnection(cs);
                 con.Open();
 
@@ -79,6 +79,7 @@ namespace ZKtecoControl
                 cmd.ExecuteNonQuery();
 
                 con.Close();
+                */
             }
             else
             {
@@ -136,6 +137,8 @@ namespace ZKtecoControl
                     iIndex++;
 
                     //insert to db
+                    
+                    /*
                     //string cs = @"URI=file:E:\Lab\Demo\sqlite\db\sqlite\testDB.db";
 
                     SQLiteConnection con = new SQLiteConnection(cs);
@@ -155,6 +158,7 @@ namespace ZKtecoControl
                     cmd.ExecuteNonQuery();
 
                     con.Close();
+                    */
                 }
             }
             else
