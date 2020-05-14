@@ -1,0 +1,6 @@
+E:\Lab\GitHub\CSharp\sqldemo\sqldemo\bin\Debug\sqldemo.exe.config
+E:\Lab\GitHub\CSharp\sqldemo\sqldemo\bin\Debug\sqldemo.exe
+E:\Lab\GitHub\CSharp\sqldemo\sqldemo\bin\Debug\sqldemo.pdb
+E:\Lab\GitHub\CSharp\sqldemo\sqldemo\obj\Debug\sqldemo.csproj.CoreCompileInputs.cache
+E:\Lab\GitHub\CSharp\sqldemo\sqldemo\obj\Debug\sqldemo.exe
+E:\Lab\GitHub\CSharp\sqldemo\sqldemo\obj\Debug\sqldemo.pdb

@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SQLite;
-//using System.Data.SqlClient;
+using System.Data.SqlClient;
 
-namespace Sqlitedemo
+namespace sqldemo
 {
     class Program
     {
@@ -14,14 +13,13 @@ namespace Sqlitedemo
         {
             //https://o7planning.org/vi/10515/huong-dan-lam-viec-voi-database-sql-server-su-dung-csharp
 
-            //string datasource = @"127.0.0.1\SQLEXPRESS";
-            //string database = "";
-            //string username = "sa";
-            //string password = "123456a@";
-            //string connString = @"Data Source=" + datasource + ";Initial Catalog="+ database + ";Persist Security Info=True;User ID=" + username + ";Password=" + password;
-            string connString = @"URI=file:E:\Lab\Demo\sqlite\db\sqlite\testDB.db";
+            string datasource = "WIN-AL49731RE58\\SQLEXPRESS";
+            string database = "mylab";
+            string username = "sa";
+            string password = "123456a@";
+            string connString = @"Data Source=" + datasource + ";Initial Catalog=" + database + ";Persist Security Info=True;User ID=" + username + ";Password=" + password;
 
-            SQLiteConnection conn = new SQLiteConnection(connString);
+            SqlConnection conn = new SqlConnection(connString);
 
             // =======Solution 1:
             /*    
@@ -31,7 +29,7 @@ namespace Sqlitedemo
                 String sql = "";
                 cmd.CommandText = sql;
             */
-            
+
             // =======Solution 2:
             /*
             // Tạo đối tượng Command.
@@ -53,17 +51,25 @@ namespace Sqlitedemo
             try
             {
                 //using solution 1
-                SQLiteCommand cmd = new SQLiteCommand(conn);
+                SqlCommand cmd = conn.CreateCommand();
+
+                cmd.CommandText= "SELECT @@version";
+
+                //ExecuteScalar(): return first colunm of first row in the result set returned by the query
+                Console.WriteLine((string)cmd.ExecuteScalar());
+
 
                 cmd.CommandText = "DROP TABLE IF EXISTS AcsPin";
                 cmd.ExecuteNonQuery();
 
-                cmd.CommandText = @"CREATE TABLE AcsPin(id INTEGER PRIMARY KEY, teamid INT, checkin TEXT, checkout TEXT, pin TEXT, asign TEXT, stat TEXT)";
+                cmd.CommandText = @"CREATE TABLE AcsPin(id INT NOT NULL IDENTITY(1,1) PRIMARY KEY, teamid INT, checkin TEXT, checkout TEXT, pin TEXT, asign TEXT, stat TEXT)";
+                // Thực thi Command (Dùng cho delete, insert, update).
                 cmd.ExecuteNonQuery();
 
                 cmd.CommandText = "INSERT INTO AcsPin(teamid, checkin, checkout, pin, asign, stat) VALUES(2, '12/5/2020 14:00:00', '12/5/2020 16:00:00', '224466', 'Nhungld', 'pass')";
                 cmd.ExecuteNonQuery();
 
+                
                 cmd.CommandText = "INSERT INTO AcsPin(teamid, checkin, checkout, pin, asign, stat) VALUES(3, '12/5/2020 16:00:00', '12/5/2020 18:00:00', '664422', 'minhnt27', 'next')";
                 cmd.ExecuteNonQuery();
 
@@ -72,14 +78,16 @@ namespace Sqlitedemo
 
                 cmd.CommandText = "INSERT INTO AcsPin(teamid, checkin, checkout, pin, asign, stat) VALUES(3, '12/5/2020 16:00:00', '12/5/2020 18:00:00', '664422', 'minhnt27', 'next')";
                 cmd.ExecuteNonQuery();
+                
 
-                Console.WriteLine("Table AcsPin is ready");
+                //Console.WriteLine("Table AcsPin is ready");
 
+                
                 //using solution 3
-                string stm = "SELECT * FROM AcsPin LIMIT 5";
-                SQLiteCommand cmd2 = new SQLiteCommand(stm, conn);
+                string stm = "SELECT * FROM AcsPin";
+                SqlCommand cmd2 = new SqlCommand(stm, conn);
 
-                SQLiteDataReader rdr = cmd2.ExecuteReader();
+                SqlDataReader rdr = cmd2.ExecuteReader();
 
                 Console.WriteLine($"{rdr.GetName(0),-3} {rdr.GetName(1),-8} {rdr.GetName(2),-20} {rdr.GetName(3),-20} {rdr.GetName(4),-8} {rdr.GetName(5),-8} {rdr.GetName(6),-8}");
                 while (rdr.Read())
@@ -89,9 +97,10 @@ namespace Sqlitedemo
 
                 //Là đối tượng của Interface IDispose, Gọi phương thức để tiêu hủy đối tượng, Giải phóng tài nguyên
                 rdr.Dispose();
+                
 
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine("Error: " + e);
                 Console.WriteLine(e.StackTrace);
@@ -103,9 +112,7 @@ namespace Sqlitedemo
                 // Hủy đối tượng, giải phóng tài nguyên.
                 conn.Dispose();
             }
-            
 
-            
 
 
         }

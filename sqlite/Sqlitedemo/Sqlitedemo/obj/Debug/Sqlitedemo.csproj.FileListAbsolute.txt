@@ -26,7 +26,6 @@ E:\Lab\GitHub\CSharp\sqlite\Sqlitedemo\Sqlitedemo\bin\Debug\EntityFramework.xml
 E:\Lab\GitHub\CSharp\sqlite\Sqlitedemo\Sqlitedemo\bin\Debug\EntityFramework.SqlServer.xml
 E:\Lab\GitHub\CSharp\sqlite\Sqlitedemo\Sqlitedemo\bin\Debug\System.Data.SQLite.xml
 E:\Lab\GitHub\CSharp\sqlite\Sqlitedemo\Sqlitedemo\bin\Debug\System.Data.SQLite.dll.config
-E:\Lab\GitHub\CSharp\sqlite\Sqlitedemo\Sqlitedemo\obj\Debug\Sqlitedemo.csprojAssemblyReference.cache
 E:\Lab\GitHub\CSharp\sqlite\Sqlitedemo\Sqlitedemo\obj\Debug\Sqlitedemo.csproj.CoreCompileInputs.cache
 E:\Lab\GitHub\CSharp\sqlite\Sqlitedemo\Sqlitedemo\obj\Debug\Sqlitedemo.csproj.CopyComplete
 E:\Lab\GitHub\CSharp\sqlite\Sqlitedemo\Sqlitedemo\obj\Debug\Sqlitedemo.exe
