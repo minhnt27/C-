@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtIP = new System.Windows.Forms.TextBox();
             this.btnConnect = new System.Windows.Forms.Button();
             this.lblState = new System.Windows.Forms.Label();
@@ -50,28 +51,33 @@
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnGetStrCardNumber = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.btnSetStrCardNumber = new System.Windows.Forms.Button();
             this.txtUserID = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.chbEnabled = new System.Windows.Forms.CheckBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnSetStrCardNumber = new System.Windows.Forms.Button();
             this.label89 = new System.Windows.Forms.Label();
             this.cbPrivilege = new System.Windows.Forms.ComboBox();
             this.txtCardnumber = new System.Windows.Forms.TextBox();
             this.Privilege = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtLog = new System.Windows.Forms.RichTextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbdbver = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtIP
@@ -122,7 +128,7 @@
             this.lvLogs.GridLines = true;
             this.lvLogs.Location = new System.Drawing.Point(14, 23);
             this.lvLogs.Name = "lvLogs";
-            this.lvLogs.Size = new System.Drawing.Size(574, 384);
+            this.lvLogs.Size = new System.Drawing.Size(574, 172);
             this.lvLogs.TabIndex = 4;
             this.lvLogs.UseCompatibleStateImageBehavior = false;
             this.lvLogs.View = System.Windows.Forms.View.Details;
@@ -162,7 +168,7 @@
             // 
             // btnGetGeneralLogData
             // 
-            this.btnGetGeneralLogData.Location = new System.Drawing.Point(14, 416);
+            this.btnGetGeneralLogData.Location = new System.Drawing.Point(14, 201);
             this.btnGetGeneralLogData.Name = "btnGetGeneralLogData";
             this.btnGetGeneralLogData.Size = new System.Drawing.Size(112, 23);
             this.btnGetGeneralLogData.TabIndex = 5;
@@ -239,6 +245,33 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Upload the Card Number(part of users information)";
             // 
+            // label15
+            // 
+            this.label15.Location = new System.Drawing.Point(196, 24);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(36, 17);
+            this.label15.TabIndex = 64;
+            this.label15.Text = "Name";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(166, 56);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(66, 13);
+            this.label55.TabIndex = 66;
+            this.label55.Text = "CardNumber";
+            // 
+            // btnSetStrCardNumber
+            // 
+            this.btnSetStrCardNumber.Location = new System.Drawing.Point(12, 78);
+            this.btnSetStrCardNumber.Name = "btnSetStrCardNumber";
+            this.btnSetStrCardNumber.Size = new System.Drawing.Size(117, 23);
+            this.btnSetStrCardNumber.TabIndex = 0;
+            this.btnSetStrCardNumber.Text = "SetStrCardNumber";
+            this.btnSetStrCardNumber.UseVisualStyleBackColor = true;
+            this.btnSetStrCardNumber.Click += new System.EventHandler(this.btnSetStrCardNumber_Click);
+            // 
             // txtUserID
             // 
             this.txtUserID.Location = new System.Drawing.Point(105, 369);
@@ -262,14 +295,6 @@
             this.label16.TabIndex = 63;
             this.label16.Text = "User ID";
             // 
-            // label15
-            // 
-            this.label15.Location = new System.Drawing.Point(196, 24);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(36, 17);
-            this.label15.TabIndex = 64;
-            this.label15.Text = "Name";
-            // 
             // chbEnabled
             // 
             this.chbEnabled.AutoSize = true;
@@ -285,16 +310,6 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(67, 20);
             this.txtPassword.TabIndex = 58;
-            // 
-            // btnSetStrCardNumber
-            // 
-            this.btnSetStrCardNumber.Location = new System.Drawing.Point(12, 78);
-            this.btnSetStrCardNumber.Name = "btnSetStrCardNumber";
-            this.btnSetStrCardNumber.Size = new System.Drawing.Size(117, 23);
-            this.btnSetStrCardNumber.TabIndex = 0;
-            this.btnSetStrCardNumber.Text = "SetStrCardNumber";
-            this.btnSetStrCardNumber.UseVisualStyleBackColor = true;
-            this.btnSetStrCardNumber.Click += new System.EventHandler(this.btnSetStrCardNumber_Click);
             // 
             // label89
             // 
@@ -334,15 +349,6 @@
             this.Privilege.TabIndex = 65;
             this.Privilege.Text = "Privilege";
             // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(166, 56);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(66, 13);
-            this.label55.TabIndex = 66;
-            this.label55.Text = "CardNumber";
-            // 
             // label90
             // 
             this.label90.AutoSize = true;
@@ -367,16 +373,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Connection";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "IP Address";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -386,6 +382,16 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Port";
             this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "IP Address";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox2
             // 
@@ -405,16 +411,51 @@
             this.groupBox3.Controls.Add(this.lvLogs);
             this.groupBox3.Location = new System.Drawing.Point(509, 8);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(599, 452);
+            this.groupBox3.Size = new System.Drawing.Size(599, 235);
             this.groupBox3.TabIndex = 72;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Log checkin";
+            // 
+            // txtLog
+            // 
+            this.txtLog.Location = new System.Drawing.Point(523, 334);
+            this.txtLog.Name = "txtLog";
+            this.txtLog.Size = new System.Drawing.Size(574, 116);
+            this.txtLog.TabIndex = 73;
+            this.txtLog.Text = "the App have not yet connected to the Acs";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 10000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lbdbver
+            // 
+            this.lbdbver.AutoSize = true;
+            this.lbdbver.Location = new System.Drawing.Point(11, 16);
+            this.lbdbver.Name = "lbdbver";
+            this.lbdbver.Size = new System.Drawing.Size(78, 13);
+            this.lbdbver.TabIndex = 74;
+            this.lbdbver.Text = "Not connected";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.lbdbver);
+            this.groupBox4.Location = new System.Drawing.Point(509, 249);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(599, 211);
+            this.groupBox4.TabIndex = 75;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Automation Log";
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // AttLogsMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1120, 471);
+            this.Controls.Add(this.txtLog);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtUserID);
             this.Controls.Add(this.txtName);
@@ -429,6 +470,7 @@
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox4);
             this.Name = "AttLogsMain";
             this.Text = "Tool to ZKTeco Access";
             this.groupBox5.ResumeLayout(false);
@@ -437,6 +479,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -484,6 +528,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RichTextBox txtLog;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lbdbver;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }
 
