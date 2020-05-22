@@ -454,6 +454,34 @@ namespace ZKtecoControl
             return;
         }
 
+        private string getPasscodeonTime(int teamid)
+        {
+            string result = "123456";
+            string connString = @"Data Source=" + this.datasource + ";Initial Catalog=" + this.database + ";Persist Security Info=True;User ID=" + this.username + ";Password=" + this.password;
+            SqlConnection conn = new SqlConnection(connString);
+            conn.Open();
+            try
+            {
+                SqlCommand cmd = conn.CreateCommand();
+                long tbegin = UnixTimeNow() - 300;
+                long tend = UnixTimeNow() + 300;
+                cmd.CommandText = "SELECT passcode from UserLock where finish not like 'pass' and teamid = " + teamid + " and checkin >" + tbegin + " or checkin <" + tend ;
+                result = (String)cmd.ExecuteScalar();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: " + e);
+                Console.WriteLine(e.StackTrace);
+            }
+            finally
+            {
+                conn.Close();
+                //conn.Dispose();
+            }
+            return result;
+        }
+
+
         private void groupBox4_Enter(object sender, EventArgs e)
         {
 
